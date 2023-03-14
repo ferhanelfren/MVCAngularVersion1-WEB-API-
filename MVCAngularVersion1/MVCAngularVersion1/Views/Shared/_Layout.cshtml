@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Scripts/ClientApp/styles.ef46db3751d8e999.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/ClientApp/runtime.00285116a9b7ab64.js")
+    @Scripts.Render("~/Scripts/ClientApp/polyfills.697b8822545d671b.js")
+    @Scripts.Render("~/Scripts/ClientApp/main.544103e2c81a295f.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
